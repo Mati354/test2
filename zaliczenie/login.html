@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Logowanie / Rejestracja</title>
+</head>
+<body>
+    
+    <div class="bckstrony"></div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Strona Główna</a></li>
+                <li><a href="#about">O nas</a></li>
+                <li><a href="#events">Wydarzenia</a></li>
+                <li><a href="#members">Członkowie</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Zaloguj się lub Zarejestruj</h1>
+
+        <!-- Formularz logowania -->
+        <div id="login-form">
+            <h2>Logowanie</h2>
+            <form id="login" action="index.html" method="post">
+                <label for="login-username">Nazwa użytkownika:</label>
+                <input type="text" id="login-username" name="username" required>
+
+                <label for="login-password">Hasło:</label>
+                <input type="password" id="login-password" name="password" required>
+
+                <button type="submit">Zaloguj się</button>
+            </form>
+        </div>
+
+        <hr>
+
+        <!-- Formularz rejestracji -->
+        <div id="register-form">
+            <h2>Rejestracja</h2>
+            <form id="register" action="index.html" method="post">
+                <label for="register-username">Nazwa użytkownika:</label>
+                <input type="text" id="register-username" name="username" required>
+
+                <label for="register-password">Hasło:</label>
+                <input type="password" id="register-password" name="password" required>
+
+                <label for="register-email">Email:</label>
+                <input type="email" id="register-email" name="email" required>
+
+                <button type="submit">Zarejestruj się</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        // Przekierowanie na stronę główną po zalogowaniu/rejestracji
+        document.getElementById('login').onsubmit = function(event) {
+            event.preventDefault();
+            window.location.href = 'index.html'; // Przekierowanie po zalogowaniu
+        };
+
+        document.getElementById('register').onsubmit = function(event) {
+            event.preventDefault();
+            window.location.href = 'index.html'; // Przekierowanie po rejestracji
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+/* Styl ogólny dla strony logowania */
+html, body {
+    height: 100%; /* Zapewnia, że html i body mają 100% wysokości */
+    margin: 0; /* Usuwa domyślne marginesy */
+    padding: 0; /* Usuwa domyślne wypełnienia */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e0e0e0;
+}
+
+/* Kontener dla rozmytego tła */
+.bckstrony {
+    position: fixed; /* Ustawia tło w stałej pozycji */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/654/696/969/josefin-dagmyr-sweden-car-meets-mercedes-benz-red-cars-hd-wallpaper-preview.jpg');
+    background-size: cover; /* Dopasowuje obrazek do rozmiaru kontenera */
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(5px); /* Zastosuj rozmycie */
+    z-index: -1; /* Ustawia tło za wszystkimi innymi elementami */
+}
+
+/* Nagłówek */
+header {
+    background-color: #1f1f1f;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Car_Meet.jpg/1200px-Car_Meet.jpg?');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #bb86fc;
+}
+
+/* Stylizacja formularzy logowania/rejestracji */
+#login-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px); /* Odjęcie wysokości nagłówka */
+    padding: 20px;
+    position: relative; /* Pozwala na odpowiednie pozycjonowanie kontenera formularza */
+}
+
+.form-container {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Półprzezroczyste tło dla lepszej czytelności */
+    position: relative; /* Pozwala na odpowiednie pozycjonowanie elementów wewnątrz kontenera */
+    z-index: 1; /* Ustawia kontener formularza nad tłem */
+}
+
+h1 {
+    font-size: 24px;
+    color: #bb86fc;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    color: #e0e0e0;
+    margin-bottom: 5px;
+}
+
+input {
+    background-color: #333;
+    border: 1px solid #444;
+    color: #e0e0e0;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 300px;
+}
+
+button {
+    background-color: #bb86fc;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+}
+
+button:hover {
+    background-color: #9b63d4;
+}
+

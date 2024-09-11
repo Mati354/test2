@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twoja Strona</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">O nas</a></li>
+                <li><a href="#calendar">Kalendarz</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#testimonials">Opinie</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <body>
+            <div id="social-icons">
+                <a href="https://www.youtube.com" class="social-icon">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.498 6.186c-.208-1.537-.827-2.87-1.79-3.83C20.545.827 19.213.208 17.676.002 15.796-.206 12.394-.216 9.002.001 5.593.218 2.208 2.115.791 5.62-.206 8.04-.206 11.527.792 14.953c.573 2.768 2.142 4.782 4.411 6.222 2.233 1.426 4.784 2.061 7.323 1.888 2.627-.176 5.207-1.027 7.183-2.5 1.013-.7 1.84-1.626 2.423-2.756.86-1.647 1.348-3.418 1.48-5.273.166-2.012-.155-4.015-.96-5.855zM9.746 15.828V8.172l6.592 3.828-6.592 3.828z"/>
+                    </svg>
+                </a>
+                <a href="https://www.facebook.com" class="social-icon">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.04C6.486 2.04 2.04 6.486 2.04 12S6.486 21.96 12 21.96 21.96 17.514 21.96 12 17.514 2.04 12 2.04zm0 17.668c-3.139 0-5.696-2.557-5.696-5.696S8.861 8.316 12 8.316s5.696 2.557 5.696 5.696-2.557 5.696-5.696 5.696zm-2.451-7.873h1.538v3.072h-1.538v-3.072zm0-1.978c-.962 0-1.74.785-1.74 1.741s.785 1.741 1.74 1.741 1.741-.785 1.741-1.741-.785-1.741-1.741-1.741zM12 4.694c-3.971 0-7.215 3.243-7.215 7.215s3.243 7.215 7.215 7.215 7.215-3.243 7.215-7.215-3.243-7.215-7.215-7.215z"/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com" class="social-icon">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.162c3.086 0 3.44.012 4.653.067 1.234.058 2.116.265 2.77.572.648.317 1.134.722 1.578 1.578.308.654.515 1.536.572 2.77.055 1.213.067 1.567.067 4.653s-.012 3.44-.067 4.653c-.058 1.234-.265 2.116-.572 2.77-.317.648-.722 1.134-1.578 1.578-.654.308-1.536.515-2.77.572-1.213.055-1.567.067-4.653.067s-3.44-.012-4.653-.067c-1.234-.058-2.116-.265-2.77-.572-.648-.317-1.134-.722-1.578-1.578-.308-.654-.515-1.536-.572-2.77C2.174 15.582 2.162 15.228 2.162 12s.012-3.44.067-4.653c.058-1.234.265-2.116.572-2.77.317-.648.722-1.134 1.578-1.578.654-.308 1.536-.515 2.77-.572 1.213-.055 1.567-.067 4.653-.067zM12 0c-3.105 0-3.487.012-4.71.068-1.237.057-2.29.29-3.184.652-.888.37-1.63.865-2.296 1.606-.679.672-1.236 1.476-1.671 2.313-.343.702-.607 1.496-.727 2.258-.056 1.138-.067 1.726-.067 4.708s.012 3.44.068 4.653c.058 1.234.292 2.306.652 3.184.37.888.865 1.63 1.606 2.296.672.679 1.476 1.236 2.313 1.671.702.343 1.496.607 2.258.727 1.138.056 1.726.067 4.708.067s3.44-.012 4.653-.068c1.234-.058 2.306-.292 3.184-.652.888-.37 1.63-.865 2.296-1.606.679-.672 1.236-1.476 1.671-2.313.343-.702.607-1.496.727-2.258.056-1.138.067-1.726.067-4.708s-.012-3.44-.068-4.653c-.058-1.234-.292-2.306-.652-3.184-.37-.888-.865-1.63-1.606-2.296-.672-.679-1.476-1.236-2.313-1.671-.702-.343-1.496-.607-2.258-.727-1.138-.056-1.726-.067-4.708-.067zM12 5.839a6.161 6.161 0 1 0 0 12.322 6.161 6.161 0 0 0 0-12.322zM12 16.398a4.362 4.362 0 1 1 0-8.724 4.362 4.362 0 0 1 0 8.724zM16.896 5.096a1.444 1.444 0 1 0-2.89 0 1.444 1.444 0 0 0 2.89 0z"/>
+                    </svg>
+                </a>
+            </div>
+        </body>
+        
+    </header>
+    
+    <!-- Sekcja O nas -->
+    <section id="about">
+        <h1>O nas</h1>
+        <div class="content-wrapper">
+            <img src="about-image.jpg" alt="O nas" class="about-image">
+            <p>Jesteśmy pasjonatami motoryzacji i technologii. Nasza strona ma na celu łączenie entuzjastów z różnych dziedzin i dostarczanie im najnowszych informacji oraz wydarzeń.</p>
+        </div>
+    </section>
+    
+    <!-- Sekcja Kalendarz -->
+    <section id="calendar">
+        <h1>Kalendarz</h1>
+        <div id="calendar-container">
+            <div id="calendar">
+                <div id="calendar-header">
+                    <button id="prev-month">Poprzedni</button>
+                    <span id="current-month">Wrzesień 2024</span>
+                    <button id="next-month">Następny</button>
+                </div>
+                <table id="calendar-table">
+                    <thead>
+                        <tr>
+                            <th>Pn</th>
+                            <th>Wt</th>
+                            <th>Śr</th>
+                            <th>Cz</th>
+                            <th>Pt</th>
+                            <th>So</th>
+                            <th>Nd</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Wiersze kalendarza -->
+                        <tr>
+                            <td class="event-day zlot">1</td>
+                            <td class="event-day kino">2</td>
+                            <td class="event-day">3</td>
+                            <td class="event-day">4</td>
+                            <td class="event-day">5</td>
+                            <td class="event-day">6</td>
+                            <td class="event-day">7</td>
+                        </tr>
+                        <!-- Dodaj więcej wierszy -->
+                    </tbody>
+                </table>
+            </div>
+            <div id="event-info">
+                <h2>Informacje o wydarzeniu</h2>
+                <p>Wybierz dzień z kalendarza, aby zobaczyć szczegóły wydarzenia.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sekcja Galeria -->
+    <section id="gallery">
+        <h1>Galeria</h1>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="auto.jpg.webp" alt="Galeria 1">
+            </div>
+            <div class="gallery-item">
+                <img src="auto2.jpg.jpg" alt="Galeria 2">
+            </div>
+            <div class="gallery-item">
+                <img src="auto3.jpg.jpg" alt="Galeria 3">
+            </div>
+            <!-- Dodaj więcej zdjęć -->
+        </div>
+    </section>
+    
+    <!-- Sekcja Newsletter -->
+    <section id="newsletter">
+        <h1>Newsletter</h1>
+        <form id="newsletter-form">
+            <input type="email" placeholder="Twój e-mail" required>
+            <button type="submit">Zapisz się</button>
+        </form>
+    </section>
+    
+    <!-- Sekcja Opinie -->
+    <section id="testimonials">
+        <h1>Opinie</h1>
+        <div class="testimonial">
+            <p>Świetna strona! Naprawdę pomocna i dobrze zaprojektowana.</p>
+            <span>- Anna Kowalska</span>
+        </div>
+        <div class="testimonial">
+            <p>Uwielbiam tę stronę! Świetna jakość i szybka obsługa.</p>
+            <span>- Jan Nowak</span>
+        </div>
+    </section>
+    
+    <!-- Sekcja FAQ -->
+    <section id="faq">
+        <h1>FAQ</h1>
+        <div class="faq-item">
+            <h2>Jak mogę skontaktować się z obsługą klienta?</h2>
+            <p>Możesz skontaktować się z nami za pośrednictwem formularza kontaktowego dostępnego na naszej stronie lub wysyłając e-mail na adres support@twojastrona.pl.</p>
+        </div>
+        <div class="faq-item">
+            <h2>Jak mogę zaktualizować moje dane?</h2>
+            <p>Aby zaktualizować swoje dane, zaloguj się na swoje konto i przejdź do sekcji "Moje dane". Znajdziesz tam opcję edytowania swoich informacji.</p>
+        </div>
+    </section>
+    
+    <!-- Sekcja Kontakt -->
+    <section id="contact">
+        <h1>Kontakt</h1>
+        <p>Jeśli masz pytania lub potrzebujesz dodatkowych informacji, skontaktuj się z nami!</p>
+        <a href="mailto:support@twojastrona.pl">Napisz do nas</a>
+    </section>
+</body>
+</html>
